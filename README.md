@@ -11,7 +11,7 @@ kraken2-build --download-library human --db human_genome_db
 ```
 
 # Step 2. Building the Taxonomic Classification Databases
-A clustered eukaryotic nr database was prepared for taxonomic classification: (eg: eukaryotic_db)
+A clustered eukaryotic nr database was prepared for taxonomic classification: (eg: eukaryotic_db)  
 Download NCBI taxonomy
 ```plaintext
 kraken2-build --download-taxonomy --db eukaryotic_db
