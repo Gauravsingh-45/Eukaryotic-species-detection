@@ -47,6 +47,7 @@ Reads free from human contamination were classified against the clustered eukary
 ```plaintext
 kraken2 --db eukaryotic_db \
 --threads 64 \
+--confidence 0.05 \
 --paired ND1_human_free_reads_1.fq ND1_human_free_reads_2.fq  > output/result/ND1_database1_result.txt \
 --report output/report/ND1_database1_report.txt \
 --unclassified-out output/data/ND1_unclassified_#.fq
@@ -57,6 +58,7 @@ Unclassified reads from the previous step were further classified against the un
 ```plaintext
 kraken2 --db union_db \
 --threads 64 \
+--confidence 0.05 \
 --paired ND1_unclassified_1.fq ND1_unclassified_2.fq > output/result/ND1_database2_result.txt \
 --report output/report/ND1_database2_report.txt \
 ```
